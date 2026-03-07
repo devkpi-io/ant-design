@@ -29,8 +29,10 @@ const MyPage = () => {
 };
 
 // Entry component
-export default () => (
+const Demo = () => (
   <App message={{ maxCount: 1 }} notification={{ placement: 'bottomLeft' }}>
     <MyPage />
   </App>
 );
+
+export default Demo;

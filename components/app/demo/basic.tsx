@@ -40,8 +40,10 @@ const MyPage = () => {
 };
 
 // Entry component
-export default () => (
+const Demo = () => (
   <App>
     <MyPage />
   </App>
 );
+
+export default Demo;
