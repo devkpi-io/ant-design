@@ -1,6 +1,6 @@
 import * as React from 'react';
-import type { AnyObject } from 'antd/es/_util/type';
 
+import type { AnyObject } from '../../_util/type';
 import type {
   ColumnGroupType,
   ColumnsType,

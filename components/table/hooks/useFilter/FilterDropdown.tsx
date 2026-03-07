@@ -2,9 +2,9 @@ import * as React from 'react';
 import FilterFilled from '@ant-design/icons/FilterFilled';
 import type { FieldDataNode } from '@rc-component/tree';
 import isEqual from '@rc-component/util/lib/isEqual';
-import type { AnyObject } from 'antd/es/_util/type';
 import { clsx } from 'clsx';
 
+import type { AnyObject } from '../../../_util/type';
 import type { FilterState } from '.';
 import extendsObject from '../../../_util/extendsObject';
 import { useSyncState } from '../../../_util/hooks';

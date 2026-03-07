@@ -1,8 +1,6 @@
 import React from 'react';
 import { CaretLeftOutlined, CaretRightOutlined, ColumnWidthOutlined } from '@ant-design/icons';
 import { spyElementPrototypes } from '@rc-component/util/lib/test/domHook';
-import type { GetProps, SplitterProps } from 'antd';
-import { ConfigProvider, Splitter } from 'antd';
 
 import type { Orientation } from '../../_util/hooks';
 import { resetWarned } from '../../_util/warning';
@@ -16,7 +14,11 @@ import {
   triggerResize,
   waitFakeTimer,
 } from '../../../tests/utils';
+import type { GetProps } from '../../_util/type';
+import ConfigProvider from '../../config-provider';
 import SplitBar from '../SplitBar';
+import type { SplitterProps } from '..';
+import Splitter from '..';
 
 type PanelProps = GetProps<typeof Splitter.Panel>;
 

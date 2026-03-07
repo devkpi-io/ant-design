@@ -1,8 +1,9 @@
 import React from 'react';
-import type { GetProps, SplitterProps } from 'antd';
 
 import Splitter from '..';
 import { render } from '../../../tests/utils';
+import type { GetProps } from '../../_util/type';
+import type { SplitterProps } from '..';
 
 type PanelProps = GetProps<typeof Splitter.Panel>;
 const SplitterDemo: React.FC<Readonly<{ items?: PanelProps[] } & SplitterProps>> = ({

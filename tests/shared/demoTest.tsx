@@ -1,12 +1,12 @@
 import path from 'node:path';
 import * as React from 'react';
 import { createCache, StyleProvider } from '@ant-design/cssinjs';
-import { ConfigProvider } from 'antd';
 import { globSync } from 'glob';
 import kebabCase from 'lodash/kebabCase';
 import { renderToString } from 'react-dom/server';
 
 import { resetWarned } from '../../components/_util/warning';
+import ConfigProvider from '../../components/config-provider';
 import { render } from '../utils';
 import { TriggerMockContext } from './demoTestContext';
 import { excludeWarning, isSafeWarning } from './excludeWarning';

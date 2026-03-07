@@ -1,10 +1,10 @@
 import React from 'react';
-import type { GetRef } from 'antd';
 
 import type { InputNumberProps } from '..';
 import InputNumber from '..';
 import focusTest from '../../../tests/shared/focusTest';
 import { fireEvent, render } from '../../../tests/utils';
+import type { GetRef } from '../../_util/type';
 
 type InputNumberRef = GetRef<typeof InputNumber>;
 

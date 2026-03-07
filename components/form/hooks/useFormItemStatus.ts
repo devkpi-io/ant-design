@@ -1,7 +1,7 @@
 import * as React from 'react';
-import type { ValidateStatus } from 'antd/es/form/FormItem';
 
 import { devUseWarning } from '../../_util/warning';
+import type { ValidateStatus } from '../FormItem';
 import { FormItemInputContext } from '../context';
 
 type UseFormItemStatus = () => {

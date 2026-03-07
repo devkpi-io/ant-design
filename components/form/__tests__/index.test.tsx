@@ -1,14 +1,13 @@
 import type { ChangeEventHandler } from 'react';
 import React, { version as ReactVersion, useEffect, useRef, useState } from 'react';
 import { AlertFilled } from '@ant-design/icons';
-import { responsiveArrayReversed } from 'antd/es/_util/responsiveObserver';
-import type { ColProps } from 'antd/es/grid';
 import { clsx } from 'clsx';
 import scrollIntoView from 'scroll-into-view-if-needed';
 
 import type { FormInstance } from '..';
 import Form from '..';
 import { resetWarned } from '../../_util/warning';
+import { responsiveArrayReversed } from '../../_util/responsiveObserver';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, pureRender, render, screen, waitFakeTimer } from '../../../tests/utils';
@@ -32,6 +31,7 @@ import Slider from '../../slider';
 import Switch from '../../switch';
 import TreeSelect from '../../tree-select';
 import Upload from '../../upload';
+import type { ColProps } from '../../grid';
 import type { NamePath } from '../interface';
 import * as Util from '../util';
 
