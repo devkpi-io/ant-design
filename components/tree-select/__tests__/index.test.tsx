@@ -11,7 +11,7 @@ import Button from '../../button';
 import ConfigProvider from '../../config-provider';
 import Input from '../../input';
 import Space from '../../space';
-import type { AntTreeNodeProps as TreeNodeProps } from '../../tree';
+import type { AntTreeNodeProps } from '../../tree';
 
 describe('TreeSelect', () => {
   focusTest(TreeSelect, { refFocus: true });
@@ -374,7 +374,7 @@ describe('TreeSelect', () => {
     render(
       <ConfigProvider
         treeSelect={{
-          switcherIcon: ({ expanded }: TreeNodeProps) => {
+          switcherIcon: ({ expanded }: AntTreeNodeProps) => {
             return expanded ? (
               <span data-testid="custom-expanded">▼</span>
             ) : (

@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+
 import type { FullToken, GetDefaultToken } from '../../theme/internal';
 
 export interface MultipleSelectorToken {
